@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ideaDlg_root" type="id"/>
+    <item name="ideaDlg_dialog" type="id"/>
+    <item name="ideaDlg_title" type="id"/>
+    <item name="ideaDlg_message" type="id"/>
+    <item name="ideaDlg_positiveBtn" type="id"/>
+    <item name="ideaDlg_negativeBtn" type="id"/>
+    <item name="ideaDlg_neutralBtn" type="id"/>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ideaDlg_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/IdeaDialogTheme">
+
+    <!-- Dialog main -->
+    <RelativeLayout
+        android:id="@id/ideaDlg_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ideadialog_bg">
+
+        <TextView
+            android:id="@id/ideaDlg_title"
+            android:text="@string/ideaDlg_auto_title"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <!-- Will be instead of View to make support subLayout -->
+        <TextView
+            android:id="@id/ideaDlg_message"
+            android:text="@string/ideaDlg_auto_message"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_below="@id/ideaDlg_title" />
+
+        <!-- As a line if not to use it. -->
+        <Button
+            android:id="@+id/ideaDlg_neutralBtn"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:background="#e4e5e7"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <Button
+            android:id="@id/ideaDlg_negativeBtn"
+            android:text="@string/ideaDlg_btn_cancel"
+            android:textSize="18sp"
+            android:textColor="#747474"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/ideaDlg_neutralBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@id/ideaDlg_positiveBtn"
+            android:text="@string/ideaDlg_btn_ok"
+            android:textSize="18sp"
+            android:textColor="#39a5f3"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/ideaDlg_neutralBtn"
+            android:layout_alignParentEnd="true"/>
+
+        <!-- Line for button -->
+        <View
+            android:id="@+id/horLine"
+            android:background="#e4e5e7"
+            android:layout_above="@+id/ideaDlg_positiveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+</RelativeLayout>

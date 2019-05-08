@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base IdeaDialog theme for dialog -->
+    <style name="IdeaDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowFrame">@null</item>
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@color/ideaDlg_bg</item>
+    </style>
+
+</resources>
